@@ -18,7 +18,7 @@ DBG =
 # ------------------------------------------------------------------------------
 
 
-all: isholliday
+all: isholiday
 
 isholliday : main.o feierlib.o objhnd.o 
 	$(LL) $(LLOPT) $^ -o  $@
