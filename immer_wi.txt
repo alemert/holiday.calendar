@@ -1,0 +1,23 @@
+Immer wieder Sonntag, c't 15/97, S. 312, ps
+===========================================
+
+dateinfo.c -   C-Quelltext
+dateinfo.dat - Feiertagsdatei 
+
+dateinfo.c gibt alle besonderen Tage eines ganzen
+Jahres aus oder die der naehsten 30 Tage. Die Feiertage
+stehen nicht fest kodiert im Listing, sondern werden
+aus einer ASCII-Datei (dateinfo.dat) eingelesen. Damit
+ist es besonders einfach, das Programm um pers”nliche
+Feiertage oder Termine zu erg„nzen. Das Programm
+erwartet als erstes Argument den Namen der
+Feiertagsdatei. Wenn noch eine Jahresnummer folgt, gibt
+es die Feiertage des betreffenden Jahres aus. Die
+Feiertagsdatei enth„lt entweder Leerzeilen, Kommentare
+(eingeleitet mit einem Strichpunkt) oder einen
+Feiertag. Ein Feiertag beginnt immer mit einem Datum
+(ohne Jahreszahl) oder den Texten "ostersonntag" oder
+alternativ "muttertag". Mit +nummer oder -nummer weist
+man das Programm an, Tage zu addieren oder zu
+subtrahieren.
+

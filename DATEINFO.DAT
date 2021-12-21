@@ -1,0 +1,64 @@
+;
+; Feiertagsdatei dateinfo.dat
+;
+; Datumseingabe: 
+;     tt.mm             tt: Tag     mm: Monat
+;     ostersonntag      Der Ostersonntag im aktuellen Jahr
+;     muttertag         Der Muttertag im aktuellen Jahr
+;
+; Modifier:
+;     + Zahl            Die angegebene Anzahl Tage spaeter
+;     - Zahl            Die angegebene Anzahl Tage vorher
+;     + Wochentag       Der auf diesen Tag folgende Wochentag oder
+;                       der gleiche Tag, wenn der aktuelle Tag schon
+;                       der entsprechende Wochentag ist.
+;     - Wochentag       Der vorangehende Wochentag. Wenn der aktuelle
+;                       Tag schon der angegebene Wochentag ist, wird der
+;                       Wochentag eine Woche vorher erzeugt.
+; Wochentage:
+;     so mo di mi do fr sa
+;
+
+
+; Feiertage mit festem Datum
+01.01    :Neujahr
+06.01    :Heilige Drei Koenige
+01.05    :Maifeiertag
+15.08    :Maria Himmelfahrt
+03.10    :Tag der Einheit
+01.11    :Allerheiligen
+06.12    :Nikolaus
+24.12    :Heiligabend
+25.12    :1. Weihnachtstag
+26.12    :2. Weihnachtstag
+31.12    :Silvester
+
+; Feiertage mit festem Wochentag
+25.12 -so    :4. Advent
+25.12 -so-7  :3. Advent
+25.12 -so-14 :2. Advent
+25.12 -so-21 :1. Advent
+25.12 -so-28 :Totensonntag
+25.12 -so-32 :Buá- und Bettag
+25.12 -so-35 :Volkstrauertag
+
+; Sommer- und Winterzeit
+01.11 -so    :Beginn der Winterzeit (Uhr zurueckdrehen)
+01.04 -so    :Beginn der Sommerzeit (Uhr vordrehen)
+
+; Von Ostern abhaenige Tage
+ostersonntag-3       :Gruendonnerstag
+ostersonntag-2       :Karfreitag
+ostersonntag         :Ostersonntag
+ostersonntag+1       :Ostermontag
+ostersonntag+39      :Christi Himmelfahrt
+ostersonntag+49      :Pfingstsonntag
+ostersonntag+50      :Pfingstmontag
+ostersonntag+60      :Fronleichnam
+ostersonntag-48      :Rosenmontag
+ostersonntag-46      :Aschermittwoch
+
+; Fuer die Berechnung des Muttertags gibt
+; es auch eine eigene Routine
+muttertag            :Muttertag
+
