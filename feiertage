@@ -1,0 +1,29 @@
+;
+; Feiertagsdatei dateinfo.dat
+;
+; Datumseingabe: 
+;     tt.mm             tt: Tag     mm: Monat
+;     ostersonntag      Der Ostersonntag im aktuellen Jahr
+;     muttertag         Der Muttertag im aktuellen Jahr
+;
+; Modifier:
+;     + Zahl            Die angegebene Anzahl Tage spaeter
+;     - Zahl            Die angegebene Anzahl Tage vorher
+;     + Wochentag       Der auf diesen Tag folgende Wochentag oder
+;                       der gleiche Tag, wenn der aktuelle Tag schon
+;                       der entsprechende Wochentag ist.
+;     - Wochentag       Der vorangehende Wochentag. Wenn der aktuelle
+;                       Tag schon der angegebene Wochentag ist, wird der
+;                       Wochentag eine Woche vorher erzeugt.
+; Wochentage:
+;     so mo di mi do fr sa
+;
+
+
+; Feiertage mit festem Datum
+01.01    :Neujahr
+01.05    :Maifeiertag
+25.12    :1. Weihnachtstag
+26.12    :2. Weihnachtstag
+ostersonntag-2       :Karfreitag
+ostersonntag+1       :Ostermontag
